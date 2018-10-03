@@ -9,10 +9,6 @@ import android.util.Log;
 
 import com.example.maxim.mysearch.Contract.SearchEntry;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -42,11 +38,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         db.execSQL(SQL_CREATE_LOCATION_TABLE);
 
-        try {
-            populateDB(db);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            populateDB(db);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Override
